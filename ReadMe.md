@@ -1,49 +1,45 @@
-# Real-Time Currency Converter
+# PyFiglet Text Art Generator
 
-This Python project uses the `requests` library and Tkinter GUI to create a real-time currency converter. Below is a summary of the script, including its features, how to run it, and the requirements for the project.
+This Python script utilizes the `pyfiglet` library to generate ASCII art text using different font styles. Below is a summary of the script, including its features, how to run it, and the requirements for the project.
 
 ## Features:
 
-1. **Real-Time Currency Conversion:** 💱
-   - Fetches live currency exchange rates from the ExchangeRate-API.
-   - Allows conversion between different currencies with real-time rates.
-
-2. **Graphical User Interface (GUI):** 🖥️
-   - Utilizes Tkinter library to create a user-friendly GUI for input and output.
-   - Displays the converted amount in the GUI window.
+1. **Text Art Generation:** 🎨
+   - Generates ASCII art text based on input text using various font styles.
+   - Provides a wide range of font options to choose from.
 
 ## How to Run:
 
-1. **Install Required Libraries:**
-   - Install the `requests` library using pip:
+1. **Install PyFiglet:**
+   - Install the `pyfiglet` library using pip:
      ```
-     pip install requests
+     pip install pyfiglet
      ```
-   - Tkinter is included in Python's standard library, so no additional installation is required.
 
-2. **Obtain API Access:**
-   - Sign up and obtain an API key from [ExchangeRate-API](https://www.exchangerate-api.com/).
+2. **Import and Use:**
+   - Import the `pyfiglet` module in your Python script:
+     ```python
+     import pyfiglet
+     ```
 
-3. **Update API URL:**
-   - Replace the `url` variable in the script with your API URL containing the API key.
-
-4. **Run the Script:**
-   - Open a terminal or command prompt.
-   - Navigate to the directory containing the script (`cd path/to/script`).
-   - Run the script using `python filename.py`.
+3. **Generate ASCII Art:**
+   - Use the `figlet_format` function to create ASCII art text:
+     ```python
+     font = pyfiglet.figlet_format('YourTextHere')
+     print(font)
+     ```
 
 ## Requirements:
 
 - Python 3.x installed on your system.
-- `requests` library installed (`pip install requests`).
-- Access to ExchangeRate-API with an API key.
-- Basic understanding of Python and GUI development using Tkinter.
+- `pyfiglet` library installed (`pip install pyfiglet`).
+- Basic understanding of Python string manipulation for customizing text art.
 
 ## Example Output:
 
-Upon running the script and entering the amount and currencies to convert, the GUI window will display the converted amount based on real-time exchange rates fetched from the API.
+Running the script with different input text and font styles will produce ASCII art representing the input text in various decorative styles.
 
-Feel free to customize the GUI layout, add more currencies, or enhance the functionality based on your requirements. Happy currency converting! 💰
+Feel free to experiment with different fonts and text inputs to create customized ASCII art using PyFiglet. Enjoy creating visually appealing text art! 🌟
 
 # 💫 About Me:
 
